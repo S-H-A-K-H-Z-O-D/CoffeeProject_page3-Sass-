@@ -1,0 +1,36 @@
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: #2C343E;
+    padding: 35px 80px;
+    margin-bottom: 50px;
+    margin-top: 180px;
+
+    &>img {
+        height: 25px;
+    }
+
+    &__list {
+        margin-right: auto;
+        list-style: none;
+        display: flex;
+
+        &__item {
+            &>a {
+                text-decoration: none;
+                color: #83888F;
+                padding-left: 15px;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    &__icons {
+        &>a {
+            padding-left: 15px;
+        }
+    }
+}

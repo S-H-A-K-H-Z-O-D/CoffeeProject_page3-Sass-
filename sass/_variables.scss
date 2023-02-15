@@ -1,0 +1,59 @@
+@mixin titles_item {
+    position: relative;
+    font-family: fraunces;
+    color: #83888F;
+
+                &:hover{
+                    cursor: pointer;
+                    &::before{
+                        background: #66D2CF;
+                    }
+
+                    &::after{
+                        background: #66D2CF;
+                    }
+                }
+
+                &:active{
+                    &::before{
+                        transform: matrix(1, 1, -1, 1, 0, 0);
+                        right: 25px;
+                        top: 15px;
+                    }
+
+                    &::after{
+                        transform: matrix(-1, 1, 1, 1, 0, 0);
+                        right: 40px;
+                        top: 15px;
+                    }
+
+                    & + .section2__rightSide__block__cards{
+                        display: none;
+                    }
+
+
+                }
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 18px;
+                    height: 5px;
+                    background: #0E8784;
+                    transform: matrix(1, 1, -1, 1, 0, 0);
+                    right: 40px;
+                    top: 15px;
+                }
+
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 18px;
+                    height: 5px;
+                    background: #0E8784;
+                    transform: matrix(-1, 1, 1, 1, 0, 0);
+                    right: 25px;
+                    top: 15px;
+                }
+}

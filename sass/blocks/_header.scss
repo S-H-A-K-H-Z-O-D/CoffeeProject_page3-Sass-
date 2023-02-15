@@ -1,0 +1,21 @@
+header{
+    background: url(/img/Bitmap.png) no-repeat;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+
+.head{
+    width: 35%;
+    padding: 100px 60px;
+    padding-bottom: 130px;
+    color: white;
+
+    &__title{
+        font-family: fraunces;
+        font-size: 65px;
+    }
+
+    &__description{
+        line-height: 24px;
+    }
+}

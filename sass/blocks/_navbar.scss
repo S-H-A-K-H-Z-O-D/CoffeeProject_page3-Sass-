@@ -1,0 +1,33 @@
+@mixin flexContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.navbar{
+    @include flexContent();
+    margin: 50px 0;
+
+    img{
+        height: 25px;
+    }
+
+    &__list{
+        display: flex;
+        list-style: none;
+
+        &__item{
+            margin-left: 15px;
+
+            a{
+                text-decoration: none;
+                font-family: barlow-700;
+                color: #83888F;
+
+                &:hover{
+                    color: black;
+                }
+            }
+        }
+    }
+}
