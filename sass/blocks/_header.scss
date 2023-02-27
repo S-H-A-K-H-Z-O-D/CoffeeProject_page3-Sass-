@@ -1,4 +1,4 @@
-header{
+.header{
     background: url(/img/Bitmap.png) no-repeat;
     background-size: 100% 100%;
     border-radius: 10px;
@@ -17,5 +17,43 @@ header{
 
     &__description{
         line-height: 24px;
+    }
+}
+
+
+@media only screen and (max-width: 781px){
+
+    .header{
+        background: url(/img/Bitmap-tablet.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .head{
+        width: 60%;
+        padding: 70px 50px;
+        padding-bottom: 100px;
+    
+        &__title{
+            font-size: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 481px){
+
+    .header{
+        background: url(/img/Bitmap-mobile.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    
+    .head{
+        text-align: center;
+        width: fit-content;
+        padding: 90px 50px;
+        padding-bottom: 100px;
+    
+        &__title{
+            font-size: 45px;
+        }
     }
 }
